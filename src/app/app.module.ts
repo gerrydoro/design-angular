@@ -1,6 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
+import { ClarityModule } from "clarity-angular";
+
 import { AppComponent } from './app.component';
 import { AlertComponent } from './alert/alert.component';
 import { AccordionComponent } from './accordion/accordion.component';
@@ -17,14 +19,15 @@ import { DialogComponent } from './dialog/dialog.component';
       BreadcrumbComponent,
       ButtonComponent,
       CalloutComponent,
-      DialogComponent
+      DialogComponent,
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    ClarityModule.forRoot(),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  //declarations: [AppComponent],
+  bootstrap: [AppComponent],
+  
 })
 export class AppModule { }
-
-

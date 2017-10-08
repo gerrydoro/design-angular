@@ -1,7 +1,8 @@
 import { Injectable, Optional, RendererFactory2, ViewEncapsulation } from '@angular/core';
 import { TransferState } from './transfer-state';
 import { PlatformState } from '@angular/platform-server';
-import * as serialize from 'serialize-javascript';
+import * as serialize from 'serialize-javascript/index.js';
+
 
 @Injectable()
 export class ServerTransferState extends TransferState {
